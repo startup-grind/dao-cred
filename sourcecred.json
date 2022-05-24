@@ -1,3 +1,137 @@
 {
-  "bundledPlugins": []
+  "bundledPlugins": ["sourcecred/discord"],
+  "credEquatePlugins": [
+    {
+      "id": "sourcecred/discord",
+      "configsByTarget": {
+        "453243919774253079": [
+          {
+            "memo": "Initial Config",
+            "startDate": "1/1/2021",
+            "weights": [
+              {
+                "key": "emoji",
+                "default": 1,
+                "subkeys": [
+                  {
+                    "subkey": ":value2:",
+                    "weight": 2
+                  },
+                  {
+                    "subkey": ":value3:",
+                    "weight": 3
+                  },
+                  {
+                    "subkey": ":value5:",
+                    "weight": 5
+                  },
+                  {
+                    "subkey": ":value8:",
+                    "weight": 8
+                  },
+                  {
+                    "subkey": ":value13:",
+                    "weight": 13
+                  },
+                  {
+                    "subkey": "sourcecred:626763367893303303",
+                    "weight": 3
+                  },
+                  {
+                    "subkey": "👎",
+                    "weight": 0
+                  }
+                ]
+              },
+              {
+                "key": "role",
+                "default": 0,
+                "subkeys": [
+                  {
+                    "subkey": "477551557723029514",
+                    "memo": "contributors",
+                    "weight": 2
+                  },
+                  {
+                    "subkey": "717905734863421472",
+                    "memo": "community",
+                    "weight": 1
+                  }
+                ]
+              },
+              {
+                "key": "channel",
+                "default": 1,
+                "subkeys": [
+                  {
+                    "subkey": "743545520445718700",
+                    "memo": "meeting-notes",
+                    "weight": 8
+                  },
+                  {
+                    "subkey": "718512695875469353",
+                    "memo": "announcements",
+                    "weight": 0.1
+                  },
+                  {
+                    "subkey": "454007860926611478",
+                    "memo": "any-questions",
+                    "weight": 3
+                  },
+                  {
+                    "subkey": "679064720375808026",
+                    "memo": "props",
+                    "weight": 15
+                  },
+                  {
+                    "subkey": "543168537062014987",
+                    "memo": "did-a-thing",
+                    "weight": 12
+                  }
+                ]
+              },
+              {
+                "key": "category",
+                "default": 1,
+                "subkeys": []
+              }
+            ],
+            "operators": [
+              {
+                "key": "reactionsAcrossParticipants",
+                "operator": "AVERAGE"
+              },
+              {
+                "key": "reactionsOfSingleParticipant",
+                "operator": "MAX"
+              }
+            ],
+            "shares": [
+              {
+                "key": "author",
+                "default": 1,
+                "subkeys": [
+                  {
+                    "subkey": "743545520445718700",
+                    "memo": "meeting-notes",
+                    "weight": 0.05
+                  },
+                  {
+                    "subkey": "679064720375808026",
+                    "memo": "props",
+                    "weight": 0
+                  }
+                ]
+              },
+              {
+                "key": "mention",
+                "default": 1,
+                "subkeys": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
